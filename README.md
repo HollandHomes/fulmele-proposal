@@ -1,1 +1,277 @@
-# fulmele-proposal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        canvas {
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            background-color: #f9fafb;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body class="p-6 sm:p-10">
+
+    <div id="proposal-content" class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-6 sm:p-10">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Holland Family Home Services, Inc.</h1>
+            <p class="text-md sm:text-lg text-gray-600 mt-2">70 Copper Head Trail, Murphy, NC 828-541-2442 TheHollandSeven@gmail.com</p>
+            <hr class="my-6 border-gray-300">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700">PROPOSAL FOR: Quarterly Home Maintenance Contract</h2>
+        </header>
+
+        <section class="prose max-w-none text-gray-700">
+            <p class="mb-2"><strong>Client Name:</strong> Jim Fulmele</p>
+            <p class="mb-2"><strong>Project Address:</strong> 440 Forest View Dr. Murphy NC 28906</p>
+            <p class="mb-6"><strong>Date of Issue:</strong> September 30, 2025</p>
+
+            <p class="mb-6">This proposal outlines a phased approach to multiple projects at your home. Each item is a self-contained project with its own scope and cost. This allows for flexibility in scheduling and budget. The prices are all-inclusive of labor, materials, delivery, and complete site cleanup for each individual phase.</p>
+
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Phase 1: Immediate Action Projects (Select Services)</h3>
+            <p class="mb-6">Please check the box next to each project you would like to include in this contract. <strong>The Quarterly Lawn Maintenance is a supplemental service based on bi-weekly mowing during the 7-month growing season and fulfills the request for a budgeted quarterly cost.</strong></p>
+        </section>
+
+        <div class="space-y-6">
+            <!-- 1. Quarterly Lawn Maintenance Budget (RECURRING SERVICE) -->
+            <div class="p-5 bg-green-50 rounded-lg shadow-sm border border-green-200">
+                <label class="flex items-start">
+                    <!-- Price: 14 visits @ $75 / 4 quarters = $262.50 -->
+                    <input type="checkbox" data-price="262.50" class="mt-1 h-6 w-6 text-green-600 rounded focus:ring-green-500">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">Quarterly Lawn Maintenance Budget (Seasonal Cuts)</span>
+                        <p class="text-gray-600 mt-1">
+                            General mowing and weed eating of <strong>flat areas only</strong>. This is a supplemental service for your self-maintenance efforts, calculated based on <strong>14 cuts</strong> per season. The service schedule will operate on a <strong>2 to 3-week cycle</strong> depending on seasonal growth and lawn needs. <strong>This is your recurring budgeted quarterly cost.</strong>
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">Quarterly Cost: $<span class="price-display">262.50</span></span>
+                    </span>
+                </label>
+            </div>
+
+            <!-- 2. Window Washing Service (ONE-TIME FEE) -->
+            <div class="p-5 bg-gray-50 rounded-lg shadow-sm">
+                <label class="flex items-start">
+                    <input type="checkbox" data-price="250.00" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">One-Time Fee: Window Washing Service (Per Service)</span>
+                        <p class="text-gray-600 mt-1">
+                            Washing the inside and outside of all windows. This is a one-time service fee, booked on demand.
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">250.00</span></span>
+                    </span>
+                </label>
+            </div>
+
+            <!-- 3. Hill Clean Up (ONE-TIME FEE) -->
+            <div class="p-5 bg-gray-50 rounded-lg shadow-sm">
+                <label class="flex items-start">
+                    <input type="checkbox" data-price="135.00" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">One-Time Fee: Hill Clean Up (Per Service)</span>
+                        <p class="text-gray-600 mt-1">
+                            Cleaning up the hill and the front side of the property, including debris removal and trimming. This is a one-time service fee, booked on demand.
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">135.00</span></span>
+                    </span>
+                </label>
+            </div>
+
+            <!-- 4. View Clearing: Small Tree Removal (ONE-TIME FEE) -->
+            <div class="p-5 bg-gray-50 rounded-lg shadow-sm">
+                <label class="flex items-start">
+                    <input type="checkbox" data-price="140.00" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">One-Time Fee: View Clearing (Small Trees)</span>
+                        <p class="text-gray-600 mt-1">
+                            Cut down small trees blocking the view that can be managed with our current skill set and equipment (excluding large, high-risk trees).
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">140.00</span></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <section class="prose max-w-none text-gray-700 mt-8 pt-4 border-t border-gray-200">
+            <h3 class="text-xl sm:text-2xl font-bold mt-4 mb-4 text-indigo-700">Mowing Service: Quarterly Billing & Schedule</h3>
+            <p class="mb-4">The Quarterly Lawn Maintenance Budget of <strong>$<span class="font-semibold">262.50</span></strong> is designed to simplify your annual budgeting by spreading the cost of the seasonal service over 4 equal payments throughout the year.</p>
+
+            <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                <h4 class="text-lg font-bold text-yellow-800 mb-2">Service Period vs. Billing Period:</h4>
+                <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                    <li><strong>Service Months:</strong> Mowing service (calculated as <strong>14 cuts</strong> total) occurs during the main growing season, typically from <strong>April through October</strong>. The cycle will be <strong>2 to 3 weeks</strong> between visits, adjusted for optimal lawn health based on current weather and growth rate.</li>
+                    <li><strong>Billing Months:</strong> You will be billed four (4) times per year, with payments due on the first day of the following months:</li>
+                </ul>
+                <div class="mt-3 grid sm:grid-cols-2 gap-4 text-sm font-medium">
+                    <div class="bg-white p-3 rounded-md shadow-inner border border-gray-100">
+                        <p class="text-indigo-600 font-semibold">Quarter 1 Payment Covers:</p>
+                        <p>January, February, March</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-md shadow-inner border border-gray-100">
+                        <p class="text-indigo-600 font-semibold">Quarter 2 Payment Covers:</p>
+                        <p>April, May, June</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-md shadow-inner border border-gray-100">
+                        <p class="text-indigo-600 font-semibold">Quarter 3 Payment Covers:</p>
+                        <p>July, August, September</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-md shadow-inner border border-gray-100">
+                        <p class="text-indigo-600 font-semibold">Quarter 4 Payment Covers:</p>
+                        <p>October, November, December</p>
+                    </div>
+                </div>
+                <p class="text-xs mt-3 italic text-yellow-800">Note: The payment schedule is fixed to spread the annual cost evenly. Services are only performed during the active growing season (April - October).</p>
+            </div>
+        </section>
+
+        <section class="prose max-w-none text-gray-700 mt-10">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Exclusions from Scope</h3>
+            <p class="mb-4">The Quarterly Lawn Maintenance Budget and the One-Time Fees listed in Phase 1 <strong>do not include</strong> the following services, which must be quoted separately:</p>
+            <div class="space-y-4 p-4 bg-red-50 rounded-lg border border-red-200 text-gray-700">
+                <p class="font-semibold text-red-800">1. Large Tree Removal</p>
+                <p class="text-sm ml-4">Cutting down large, high-risk trees that require specialized equipment or advanced rigging is <strong>explicitly excluded</strong> from the view-clearing one-time fee and the maintenance budget.</p>
+
+                <p class="font-semibold text-red-800">2. Weed or Chemical Treatment</p>
+                <p class="text-sm ml-4">The application of chemicals (weed killer, fertilizer, etc.) is <strong>excluded</strong> from the standard maintenance budget. A customized treatment plan will be priced and quoted separately.</p>
+            </div>
+        </section>
+        
+        <div class="mt-10 p-6 bg-indigo-50 rounded-lg shadow-md flex justify-between items-center">
+            <h4 class="text-xl font-bold text-indigo-800">Total Quote for Selected Projects:</h4>
+            <span id="total-price" class="text-3xl font-extrabold text-indigo-800">$0.00</span>
+        </div>
+
+        <section class="prose max-w-none text-gray-700 mt-8">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Proposal Acceptance</h3>
+            <p class="mb-6">The undersigned agrees to the scope of work and pricing as outlined in this proposal. A signed copy of this document is required to schedule and begin work for the selected **One-Time Fees**. **Quarterly maintenance billing will begin on the first service date.**</p>
+        </section>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-8">
+            <div>
+                <label for="client-name" class="block text-sm font-medium text-gray-700">Client Name</label>
+                <input type="text" id="client-name" value="Jim Fulmele" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                <input type="date" id="date" value="2025-09-30" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <label for="signature-pad" class="block text-sm font-medium text-gray-700">Client Signature</label>
+            <canvas id="signature-pad" width="400" height="150" class="mt-1"></canvas>
+            <div class="mt-2 text-right">
+                <button onclick="clearSignature()" class="text-sm text-gray-500 hover:text-gray-700">Clear Signature</button>
+            </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t-2 border-dashed border-gray-300">
+            <div class="p-4 rounded-lg bg-gray-50 text-gray-700 text-sm">
+                <p class="mb-2">To complete and return this proposal:</p>
+                <ol class="list-decimal list-inside space-y-1">
+                    <li>Fill out the form and check the boxes for the projects you want.</li>
+                    <li>Sign the document using the signature pad above.</li>
+                    <li>Click the button below to open the print dialog.</li>
+                    <li>In the print dialog, select "Save as PDF" as the destination to save a copy.</li>
+                    <li>Email the completed PDF to <strong>TheHollandSeven@gmail.com</strong></li>
+                </ol>
+            </div>
+            
+            <div class="mt-6 flex justify-center space-x-4">
+                <button onclick="window.print()" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    Save as PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const totalPriceEl = document.getElementById('total-price');
+
+        function updateTotalPrice() {
+            let total = 0;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    total += parseFloat(checkbox.dataset.price);
+                }
+            });
+            totalPriceEl.textContent = `$${total.toFixed(2)}`;
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateTotalPrice);
+        });
+
+        // Initial price update on page load
+        updateTotalPrice();
+        
+        // --- Signature Pad Logic ---
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        let drawing = false;
+
+        // Set line style for signature
+        ctx.strokeStyle = '#374151'; // Dark gray color
+        ctx.lineWidth = 2;
+        ctx.lineCap = 'round';
+
+        function getMousePos(canvas, evt) {
+            const rect = canvas.getBoundingClientRect();
+            // Handle touch events
+            const clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
+            const clientY = evt.touches ? evt.touches[0].clientY : evt.clientY;
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDrawing(e) {
+            drawing = true;
+            const pos = getMousePos(canvas, e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+            e.preventDefault();
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+            const pos = getMousePos(canvas, e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+            e.preventDefault();
+        }
+
+        function stopDrawing() {
+            drawing = false;
+        }
+        
+        // Mouse events
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing); // Stop drawing if mouse leaves canvas
+        canvas.addEventListener('mousemove', draw);
+
+        // Touch events for mobile
+        canvas.addEventListener('touchstart', (e) => startDrawing(e));
+        canvas.addEventListener('touchend', stopDrawing);
+        canvas.addEventListener('touchcancel', stopDrawing);
+        canvas.addEventListener('touchmove', (e) => draw(e));
+        
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+    </script>
+</body>
+</html>
